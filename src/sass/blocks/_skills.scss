@@ -78,8 +78,14 @@
                 margin-top: 25px;
                 width: 350px;
                 height: 14px;
-                background: $main_color;
+                background: gray;
                 border-radius: 4px;
+                span {
+                    display: block;
+                    height: 100%;
+                    background: $main_color;
+                    border-radius: 4px;
+                }
             } 
         }
     }

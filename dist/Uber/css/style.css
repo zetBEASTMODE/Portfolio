@@ -1,0 +1,1162 @@
+@charset "UTF-8";
+/* line 1, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 1, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+header {
+  position: relative;
+  height: 50px;
+  /* * */
+}
+
+/* line 7, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+nav {
+  position: fixed;
+  /* * */
+  width: 100%;
+  /* * */
+  height: 50px;
+  background-color: #212121;
+  z-index: 2;
+  /* * */
+}
+
+/* line 20, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.hamburger {
+  display: none;
+}
+
+/* line 23, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 30, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.menu_link {
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* line 35, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted black;
+  padding-right: 28px;
+}
+
+/* line 38, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.menu_item:last-child {
+  border-right: none;
+}
+
+/* line 41, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 47, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.subheader_logo {
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+}
+
+/* line 51, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.subheader_official {
+  margin-top: 6px;
+  opacity: 0.5;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* line 57, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.subheader_call {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 19px;
+  text-align: right;
+}
+
+/* line 63, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.subheader_phone {
+  display: block;
+  margin-top: 8px;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 12px;
+}
+
+/* line 72, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.subheader_btn {
+  margin-top: 19px;
+  width: 172px;
+  height: 46px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_mixins.sass */
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1EACC7;
+}
+
+/* line 89, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.promo {
+  min-height: 800px;
+  background: url("../img/bg/main_bg.jpg") center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+
+/* line 94, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.promo_header {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 103, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.promo_subheader {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 22px;
+  text-align: center;
+}
+
+/* line 113, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.promo_descr {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 23px;
+}
+
+/* line 121, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.promo_btn {
+  display: block;
+  margin: 118px auto 0 auto;
+  width: 259px;
+  height: 63px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1EACC7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_mixins.sass */
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1EACC7;
+}
+
+/* line 137, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.reasons {
+  padding: 71px 0 65px 0;
+}
+
+/* line 140, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.label {
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 152, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.title {
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 161, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.subtitle {
+  text-align: center;
+  color: #222222;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+}
+
+/* line 170, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+/* line 175, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.reasons_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1EACC7;
+  border-radius: 100%;
+}
+
+/* line 184, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.reasons_descr {
+  width: 343px;
+}
+
+/* line 186, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.reasons_subtitle {
+  line-height: 21px;
+  color: #1EACC7;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* line 191, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.reasons_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+/* line 197, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.mobile {
+  min-height: 864px;
+  padding: 46px 0 80px 0;
+  background: url("../img/bg/mobile_bg.png") center center/cover no-repeat;
+}
+
+/* line 201, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.mobile .row {
+  margin-top: 30px;
+}
+
+/* line 203, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 89px;
+}
+
+/* line 210, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.mobile_item_1 {
+  background: url("../img/mobile_app/first_card.jpg") center center/cover no-repeat;
+}
+
+/* line 212, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.mobile_item_2 {
+  background: url("../img/mobile_app/second_card.jpg") center center/cover no-repeat;
+}
+
+/* line 214, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.mobile_item_3 {
+  background: url("../img/mobile_app/third_card.jpg") center center/cover no-repeat;
+}
+
+/* line 216, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.mobile_item_4 {
+  background: url("../img/mobile_app/fourth_card.jpg") center center/cover no-repeat;
+}
+
+/* line 218, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.mobile_item_5 {
+  background: url("../img/mobile_app/fifth_card.jpg") center center/cover no-repeat;
+}
+
+/* line 220, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.mobile_item_6 {
+  background: url("../img/mobile_app/sixth_card.jpg") center center/cover no-repeat;
+}
+
+/* line 222, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.mobile_item_subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+/* line 230, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 29px;
+  height: 29px;
+  background-color: black;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* line 244, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.mobile_item_plus:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1EACC7;
+}
+
+/* line 250, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.mobile_item_plus:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  height: 14px;
+  width: 2px;
+  background-color: #1EACC7;
+  transition: 0.3s all;
+}
+
+/* line 261, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.mobile_item_plus:hover::before, .mobile_item_plus:hover::after {
+  background-color: #FF5656;
+}
+
+/* line 264, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.car {
+  position: relative;
+  min-height: 898px;
+  padding: 54px 0 137.5px 0;
+  background-color: #070716;
+  z-index: 0;
+}
+
+/* line 270, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.car_bg_light {
+  position: absolute;
+  width: 100%;
+  height: 396px;
+  background: url("../img/bg/car_bg.jpg") center center/cover no-repeat;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* line 277, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.car_label {
+  background-color: #FFFFFF;
+  color: #070716;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+}
+
+/* line 284, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.car_title {
+  color: #FFFFFF;
+}
+
+/* line 286, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.car_subtitle {
+  color: #FFFFFF;
+}
+
+/* line 288, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.car_logo {
+  margin: 54px auto;
+  text-align: center;
+}
+
+/* line 291, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.car_descr {
+  text-align: center;
+  color: #222222;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+/* line 299, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.require {
+  padding: 66px 0 87px 0;
+}
+
+/* line 301, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.require_block {
+  margin: 33px 0;
+}
+
+/* line 303, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.require_block_nmb {
+  margin-bottom: 0;
+}
+
+/* line 305, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.require_title {
+  color: #1CA8C3;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+/* line 310, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.require_descr {
+  color: #1CA8C3;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+/* line 314, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 20px;
+}
+
+/* line 318, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.require_list li {
+  position: relative;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #222222;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+/* line 326, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.require_list li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 20px;
+  background: url("../icons/conditions/blue_icon.png") center center/cover no-repeat;
+}
+
+/* line 337, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.require .warning .require_title {
+  color: #FF5656;
+}
+
+/* line 341, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.require .warning .require_list li::before {
+  background: url("../icons/conditions/red_icon.png") center center/cover no-repeat;
+}
+
+/* line 344, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.world {
+  min-height: 720px;
+  padding: 46px 0 40px 0;
+  background: url(../img/bg/world_bg.jpg) center center/cover no-repeat;
+}
+
+/* line 348, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.world_label {
+  background-color: #FFFFFF;
+  color: #070716;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+}
+
+/* line 355, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.world_title {
+  color: #FFFFFF;
+}
+
+/* line 357, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.world_subtitle {
+  color: #FFFFFF;
+}
+
+/* line 359, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.world_city {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1FBAD6;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 489px;
+  text-decoration: none;
+}
+
+/* line 370, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.footer {
+  min-height: 155px;
+  padding: 14px 0 44px 0;
+  position: relative;
+}
+
+/* line 374, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.footer_divider {
+  margin: 0 auto;
+  width: 301px;
+  height: 7px;
+  background-color: #1FBAD6;
+  border-radius: 5px;
+}
+
+/* line 380, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.footer_main {
+  margin: 31px auto;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* line 384, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.footer_main_link {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #070716;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  text-decoration: none;
+  margin-right: 40px;
+  text-align: center;
+}
+
+/* line 394, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.footer_main_link_3 {
+  margin-right: 0;
+}
+
+/* line 396, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.footer_second {
+  margin: 16px auto;
+  text-align: center;
+}
+
+/* line 399, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.footer_second_link {
+  text-transform: uppercase;
+  color: #999999;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  text-decoration: none;
+  margin-right: 21px;
+}
+
+/* line 407, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.footer_second_link_5 {
+  margin-right: 0;
+}
+
+/* line 409, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.footer_language {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1FBAD6;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+/* line 418, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.footer_logo {
+  width: 154px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  top: 48px;
+  transform: translateY(50%);
+  left: 23px;
+  justify-content: space-between;
+}
+
+/* line 428, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.footer_logo_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: #070716;
+  border-radius: 100%;
+}
+
+/* line 436, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.footer_logo_icon i {
+  color: #FFFFFF;
+}
+
+/* line 438, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.footer_app {
+  width: 295px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  top: 51px;
+  transform: translateY(50%);
+  right: 21px;
+}
+
+/* line 449, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_general.sass */
+.xs-visible {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 8, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .promo_header {
+    font-size: 50px;
+  }
+  /* line 11, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .reasons_block {
+    align-items: flex-start;
+  }
+  /* line 13, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .reasons_descr {
+    width: 300px;
+  }
+  /* line 16, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .mobile_item {
+    width: 300px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 21, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 8px;
+  }
+  /* line 23, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .menu_link {
+    font-size: 10px;
+  }
+  /* line 27, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .subheader_logo img {
+    width: 100%;
+  }
+  /* line 29, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .subheader_official {
+    font-size: 11px;
+  }
+  /* line 31, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .subheader_phone {
+    font-size: 18px;
+  }
+  /* line 33, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .subheader_btn {
+    margin-top: 21px;
+    height: 40px;
+    width: 100%;
+  }
+  /* line 38, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .promo_header {
+    font-size: 40px;
+  }
+  /* line 40, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 30px;
+  }
+  /* line 43, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .reasons_block {
+    align-items: center;
+    flex-direction: column;
+  }
+  /* line 47, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .reasons_descr {
+    margin-top: 20px;
+  }
+  /* line 50, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .mobile_item {
+    width: 300px;
+  }
+  /* line 54, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .car_logo img {
+    width: 600px;
+  }
+  /* line 57, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_logo {
+    top: 120px;
+    left: 120px;
+  }
+  /* line 60, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_app {
+    top: 130px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 64, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+  }
+  /* line 76, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 78, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .menu_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px;
+  }
+  /* line 82, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .menu_link {
+    font-size: 20px;
+    text-decoration: none;
+  }
+  /* line 85, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .reasons {
+    margin-right: 0;
+  }
+  /* line 90, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .car_logo img {
+    width: 500px;
+  }
+  /* line 92, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer {
+    min-height: 250px;
+  }
+  /* line 94, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_main {
+    margin: 15px auto;
+  }
+  /* line 96, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_app {
+    top: 190px;
+    left: 288px;
+    transform: translateX(-50%);
+  }
+  /* line 100, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_logo {
+    left: 288px;
+    transform: translateX(-50%);
+    top: 140px;
+  }
+  /* line 104, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 15px;
+  }
+  /* line 112, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-bottom: 3px;
+    transition: 0.5s all;
+  }
+  /* line 120, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 122, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 124, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 126, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 128, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 130, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .xs-visible {
+    display: block;
+  }
+  /* line 133, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  /* line 143, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  /* line 150, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .promo_header {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  /* line 153, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 157, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  nav {
+    height: 32px;
+  }
+  /* line 159, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  header {
+    height: 32px;
+  }
+  /* line 161, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .subheader {
+    height: 62px;
+    top: 32px;
+  }
+  /* line 164, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .subheader_official {
+    display: none;
+  }
+  /* line 166, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 18px;
+  }
+  /* line 168, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .subheader_phone {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 11px;
+  }
+  /* line 177, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .subheader_btn {
+    width: 110px;
+    height: 22px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 6px;
+  }
+  /* line 187, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .promo {
+    min-height: 400px;
+    padding: 90px 0 35px 0;
+  }
+  /* line 190, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .promo_descr {
+    display: none;
+  }
+  /* line 192, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .promo_header {
+    font-size: 30px;
+    padding: 0 24px;
+    line-height: 35px;
+  }
+  /* line 196, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .promo_subheader {
+    font-size: 20px;
+    line-height: 23px;
+    padding: 0 10px;
+  }
+  /* line 200, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin-top: 72px;
+  }
+  /* line 204, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .menu {
+    width: 85%;
+  }
+  /* line 206, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .reasons {
+    padding: 20px 0 38px;
+  }
+  /* line 208, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .reasons_block {
+    margin-top: 24px;
+  }
+  /* line 210, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .reasons_round {
+    width: 100px;
+    height: 100px;
+    margin-right: 0;
+  }
+  /* line 214, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .reasons_descr {
+    width: 100%;
+    margin-top: 27px;
+  }
+  /* line 217, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .reasons_subtitle {
+    font-size: 16px;
+  }
+  /* line 219, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .reasons_text {
+    font-size: 15px;
+  }
+  /* line 222, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .title {
+    font-size: 16px;
+    margin-top: 18px;
+    line-height: 16px;
+  }
+  /* line 227, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .mobile {
+    padding: 25px 0 42px;
+  }
+  /* line 229, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .mobile_title {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  /* line 233, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .mobile .subtitle {
+    margin-top: 9px;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+  /* line 238, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .mobile_item {
+    margin-top: 27px;
+    width: 290px;
+    height: 254px;
+  }
+  /* line 243, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .car {
+    min-height: 393px;
+    padding: 24px 0 31px;
+  }
+  /* line 246, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .car_bg_light {
+    display: none;
+  }
+  /* line 248, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .car_logo {
+    margin: 0;
+    margin-top: 34px;
+  }
+  /* line 251, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .car_logo img {
+    width: 300px;
+    height: 190px;
+  }
+  /* line 254, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .car_descr {
+    margin-top: 24px;
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+  /* line 260, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .car_title {
+    display: none;
+  }
+  /* line 262, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .car_subtitle {
+    display: none;
+  }
+  /* line 265, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .require {
+    padding: 22px 0 30px;
+  }
+  /* line 267, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .require_block {
+    margin: 0;
+  }
+  /* line 269, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .require_title {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  /* line 274, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .require_list {
+    padding-left: 30px;
+    margin-top: 5px;
+  }
+  /* line 277, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .require_list li {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+  /* line 282, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .require_descr {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  /* line 286, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .world {
+    min-height: 360px;
+    padding: 24px 0 30px;
+  }
+  /* line 289, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .world_subtitle {
+    margin-top: 11px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+  /* line 294, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .world_city {
+    margin-top: 212px;
+  }
+  /* line 297, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer {
+    padding: 24px 0 30px;
+  }
+  /* line 299, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_divider {
+    width: 255px;
+    height: 6px;
+    border-radius: 0;
+  }
+  /* line 303, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_logo {
+    left: 160px;
+    top: 155px;
+  }
+  /* line 306, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_app {
+    left: 160px;
+    top: 210px;
+  }
+  /* line 309, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_main {
+    margin: 0;
+  }
+  /* line 311, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_main_link {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    margin-top: 21px;
+    margin-right: 10px;
+  }
+  /* line 318, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_second {
+    margin: 0;
+  }
+  /* line 320, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_second_link {
+    margin-top: 10px;
+  }
+  /* line 322, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_second_link:nth-child(1) {
+    margin-right: 78px;
+  }
+  /* line 324, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_second_link:nth-child(3) {
+    margin-right: 53px;
+  }
+  /* line 326, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_second_link:nth-child(4) {
+    margin-right: 46px;
+  }
+  /* line 328, C:/Users/User/Desktop/КУРС WEB Разработчик 2022/project_3/src/sass/_media.sass */
+  .footer_language {
+    margin-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

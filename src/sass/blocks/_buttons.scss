@@ -3,4 +3,7 @@
     background: $main_color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 12px 25px;
+    &:hover {
+        box-shadow: 1px 1px 10px $main_color;
+    }
 }
