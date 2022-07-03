@@ -1,0 +1,84 @@
+.contacts {
+    padding: 120px 0 90px;
+    &__wrapper {
+        padding: 0 35px 0 52px;
+        display: grid;
+        grid-template-columns: 400px 585px;
+        justify-content: space-between;
+    }
+    &__photo {
+        width: 400px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__title {
+        position: relative;
+        @include before_circle_icon;
+        padding: 5px 0 0 12px;
+    }
+    &__divider {
+        margin-top: 4px;
+        width: 100px;
+        height: 3px;
+        background-color: $main_color;
+    }
+    &__text, &__social {
+        margin-top: 20px;
+    }
+    &__link {
+        margin-right: 25px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__form {
+        margin-top: 30px;
+        display: grid;
+        grid-template: 45px 190px 45px / repeat(2, 280px);
+        gap: 30px 25px;
+        label {
+            display: block;
+            position: absolute;
+            padding: 0 8px;
+            height: 18px;
+            background-color: #fff;
+            font-size: 12px;
+            margin-bottom: 0;
+            top: -9px;
+            left: 12px;
+        }
+    }
+    &__input {
+        position: relative;
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+    }
+    &__textarea {
+        position: relative;
+        grid-column: 1 / 3;
+        textarea {
+            width: 100%;
+            height: 100%;
+            resize: none;
+            padding: 10px 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+    &__btn {
+        border: none;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+
+    }
+}

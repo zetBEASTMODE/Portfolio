@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "cheerio": "^1.0.0-rc.12",
     "tiny-slider": "^2.9.4"
   }
 }
