@@ -25,8 +25,8 @@
     &__wrapper {
         width: 630px;
         display: grid;
-        grid-template-rows: minmax(230px auto) minmax(330px auto);
-        gap: 40px;
+        grid-template-rows: minmax(230px 1fr) minmax(330px 1fr);
+        row-gap: 40px;
         padding-top: 6px;
     }
     &__title {
