@@ -36,6 +36,14 @@
             column-gap: 20px;
         }
     }
+    .resume {
+        padding-top: 100px;
+        &__wrapper {
+            grid-template-columns: 500px 400px;
+            column-gap: 20px;
+        }
+        
+    }
 }
 
 @media (max-width: 992px) {
@@ -72,6 +80,12 @@
             grid-auto-rows: minmax(115px, auto);
         }
     }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 400px 350px;
+            column-gap: 19px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -88,6 +102,48 @@
         &__title {
             width: 370px;
             line-height: 40px;
+        }
+    }
+    .about {
+        width: 574px;
+        margin-top: 40px;
+        &__container {
+            grid-template: 340px auto auto / 1fr;
+            padding: 0 10px;
+        }
+        &__descr {
+            width: 540px;
+        }
+        &__photo {
+            margin: 0 auto;
+            img {
+                height: 340px;
+            }
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+            margin-top: 20px;
+        }
+        &__title {
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+            &:before { 
+                content: '';
+                position: absolute;
+                width: 36px;
+                height: 36px;
+                background: $main_color;
+                border-radius: 100%;
+                z-index: -1;
+                top: -25%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &__divider {
+            margin: 0 auto;
         }
     }
 }
@@ -120,6 +176,31 @@
         }
         &__btns {
             margin-top: 45px;
+        }
+    }
+    .about {
+        width: 319px;
+        &__container {
+            grid-template: 340px auto auto / 1fr;
+            column-gap: 0;
+        }
+        &__descr {
+            width: 300px;
+        }
+        &__title {
+            font-size: 24px;
+        }
+        &__skills {
+            grid-template-columns: 300px;
+            grid-template-rows: repeat(3, 1fr);
+            margin-top: 10px;
+        }
+        &__wrapper {
+            width: 300px;
+            grid-template-columns: none;
+        }
+        &__photo {
+            width: 300px;
         }
     }
 }

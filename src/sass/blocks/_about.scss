@@ -16,6 +16,12 @@
             object-fit: cover;
         }
     }
+    &__subtitle {
+        position: relative;
+        @include before_circle;
+        padding-left: 10px;
+        z-index: 1;
+    }
     &__divider {
         margin-top: 4px;
         width: 150px;
