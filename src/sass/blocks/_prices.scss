@@ -12,7 +12,8 @@
         display: grid;
         grid-template: repeat(3, minmax(45px, 1fr)) / repeat(2, 370px);
         grid-auto-rows: minmax(45px, 1fr);
-        gap: 15px 300px;
+        justify-content: space-between;
+        row-gap: 15px;
     }
     &__item {
         padding-left: 25px;

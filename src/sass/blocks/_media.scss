@@ -5,6 +5,14 @@
     .promo {
         background: url('../img/main_bg.jpg') no-repeat 60%/cover;
     }
+    .contacts {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 400px 550px;
+            justify-content: center;
+            column-gap: 20px;
+        }
+    }
 }
 
 
@@ -77,6 +85,11 @@
                 grid-row: unset;
                 grid-column: unset;
             }
+        }
+    }
+    .contacts {
+        &__form {
+            grid-template-columns: repeat(2, 260px);            
         }
     }
 }
@@ -154,6 +167,31 @@
                 grid-row: unset;
                 grid-column: unset;
             }
+        }
+    }
+    .prices {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 350px);
+            padding: 0;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 300px 400px;
+            column-gap: 15px;
+        }
+        &__photo {
+            width: 300px;
+        }
+        &__form {
+            grid-template-columns: repeat(2, 200px);
+            column-gap: 15px;
+        }
+        &__btn {
+            font-size: 13px;
+        }
+        .btn {
+            padding-top: 1px;
         }
     }
 }
@@ -253,12 +291,20 @@
     .portfolio {
         padding-top: 60px;
         &__works {
+            margin-top: 30px;
             gap: 10px;
             .horizonal, .vertical {
                 grid-row: unset;
                 grid-column: unset;
             }
         }
+    }
+    .prices {
+        &__wrapper{
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
     }
 }
 
@@ -370,6 +416,12 @@
                 grid-row: unset;
                 grid-column: unset;
             }
+        }
+    }
+    .prices {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 300px);
+            row-gap: 5px;
         }
     }
 }
