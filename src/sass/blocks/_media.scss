@@ -68,6 +68,17 @@
             }
         }
     }
+    .portfolio {
+        &__works {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: center;
+            .horizonal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -133,6 +144,15 @@
                 &_line {
                     width: 350px;
                 }
+            }
+        }
+    }
+    .portfolio {
+        &__works {
+            gap: 20px;
+            .horizonal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
             }
         }
     }
@@ -227,6 +247,16 @@
                 &_line {
                     width: 250px;
                 }
+            }
+        }
+    }
+    .portfolio {
+        padding-top: 60px;
+        &__works {
+            gap: 10px;
+            .horizonal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
             }
         }
     }
@@ -329,6 +359,17 @@
         &__subtitle {
             font-size: 24px;
             line-height: 36px;
+        }
+    }
+    .portfolio {
+        padding-top: 40px;
+        &__works {
+            margin-top: 40px;
+            row-gap: 20px;
+            .horizonal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
         }
     }
 }
