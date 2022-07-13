@@ -446,40 +446,34 @@
             display: none;
         }
         &__form {
-            grid-template-rows: 45px 45px 145px 36px 45px;
-            grid-template-columns: 300px;
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
             gap: 25px 0;
-            justify-content: center;
         }
         &__subtitle {
             font-size: 24px;
         }
         &__textarea {
             grid-column: unset;
-            grid-row: 3 / 4;
-        }
-        &__input {
-            #name {
-                grid-row: 1 / 2;
-            }
-            #email {
-                grid-row: 2 / 3;
-            }
+            width: 100%;
         }
         &__triggers { 
-            grid-row: 4 / 5;
-            grid-template: 36px 45px / 220px;
+            grid-column: unset;
+            grid-template-columns: 1fr;
+            column-gap: unset;
             row-gap: 20px;
-            justify-content: center;
-            button {
-                grid-row: 2 / 3;
-            }
+        }
+        &__btn {
+            order: 2;
+            max-width: 220px;
+            margin: 0 auto;
+        }
+        &__policy {
+            width: 180px;
+            margin: 0 auto;
+            line-height: 18px;
         }
         .btn {
             padding-top: 10px;
         }
-        &__policy {
-                padding-left: 20px;
-            }
     }
 }
