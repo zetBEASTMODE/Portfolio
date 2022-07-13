@@ -1,0 +1,13 @@
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: $main_color;
+    border-radius: 100%;
+    img {
+        width: 100%;
+    }
+}

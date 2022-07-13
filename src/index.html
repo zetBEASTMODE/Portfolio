@@ -80,7 +80,7 @@
         <div class="menu__overlay"></div>
     </div>
 
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="hamburger">
             <span></span>
             <span class="long"></span>
@@ -446,14 +446,14 @@
                     </div>
                     <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
     
-                    <form action="#" class="contacts__form">
+                    <form id="contacts-form" action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input  required name="name" id="name" type="text">
+                            <input name="name" id="name" type="text">
                             <label for="name">Ваше имя</label>
                         </div>
     
                         <div class="contacts__input">
-                            <input required name="email" id="email" type="email">
+                            <input name="email" id="email" type="email">
                             <label for="email">Ваша почта</label>
                         </div>
     
@@ -476,6 +476,15 @@
         </div>
     </section>
 
+    <a href="#up" class="pageup">
+        <img src="icons/pageup.svg" alt="up">
+    </a>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
