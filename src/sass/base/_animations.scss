@@ -1,0 +1,29 @@
+@keyframes socialsize {
+    from {
+        transform: scale3d(1);
+    }
+    50% {
+        transform: scale3d(1.25);
+    }
+    to {
+        transform: scale3d(1);
+    }
+}
+
+@keyframes socialrotate {
+    from {
+        transform: rotate3d(0);
+    }
+    25% {
+        transform: rotate3d(-90deg);
+    }
+    50% {
+        transform: rotate3d(0);
+    }
+    75% {
+        transform: rotate3d(-90deg);
+    }
+    to {
+        transform: rotate3d(0);
+    }
+}

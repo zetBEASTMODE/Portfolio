@@ -99,4 +99,12 @@
         background-color: #fff;
         opacity: .75;
     }
+    &__img {
+        &_animated {
+            animation: socialsize 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
 }
