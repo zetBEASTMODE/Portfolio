@@ -48,17 +48,52 @@ $(window).scroll(function() {
       },
       messages: {
         name: {
-          required: "Пожалуйста, введите своё имя",
+          required: "Введите своё имя",
           minlength: jQuery.validator.format("Введите минимум {0} символа")
         },
         email: {
-          required: "Пожалуйста, введите свою почту",
+          required: "Введите свою почту",
           email: "Введите адрес своей почты example@gmail.com"
         }
       }
     });
-}
+};
 
 validateForms('#contacts-form');
 
 
+$('#order').on('click', function() {
+  $('.overlay, #thanks').fadeIn('slow');
+});
+$('.modal__close').on('click', function() {
+  $('.overlay, #thanks').fadeOut('slow');
+});
+
+
+$('form').submit(function (e) {
+  e.preventDefault();
+  $.ajax({
+    type: "POST",
+    url: "mailer/smart.php",
+    data: $(this).serialize()
+  }).done(function() {
+    $(this).find("input").val("");
+    $('#order').fadeOut();
+    $('.overlay, #thanks').fadeIn('slow');
+    $('form').trigger('reset');
+  });
+  return false;
+});
+
+
+
+
+
+
+/* $('input').on('blur keyup', function() {
+  if ($("#contacts-form").valid()) {
+    $('#order').prop('disabled', false);  
+  } else {
+      $('#order').prop('disabled', 'disabled');
+  }
+}); */

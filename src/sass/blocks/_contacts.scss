@@ -50,6 +50,23 @@
             margin-bottom: 0;
             top: -9px;
             left: 12px;
+            
+        }
+        input, textarea {
+            outline: $main_color;
+        }
+        label.error {
+            left: 110px;
+            padding: 0;
+        }
+        #name-error {
+            top: -20px;
+        }
+        #email-error {
+            top: -24px;
+            line-height: 30px;
+            text-align: right;
+            padding-right: 5px;
         }
     }
     &__triggers {

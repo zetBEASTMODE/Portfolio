@@ -13,6 +13,7 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "cheerio": "^1.0.0-rc.12",
+    "jquery": "^3.6.0",
     "tiny-slider": "^2.9.4"
   }
 }
