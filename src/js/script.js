@@ -87,6 +87,34 @@ $('form').submit(function (e) {
 
 
 
+const slider = tns({
+  container: '.portfolio__carousel',
+  items: 3,
+  slideBy: 1,
+  autoplay: true,
+  autoplayButton: false,
+  autoplayTimeout: 4000,
+  autoplayHoverPause: true,
+  controls: false,
+  responsive: {
+      320: {
+          nav: true,
+          navPosition: "bottom"
+      },
+      1100: {
+          nav: false
+      }
+  }
+});
+
+document.querySelector('.prev').addEventListener('click', function () {
+  slider.goTo('prev');
+});
+
+document.querySelector('.next').addEventListener('click', function () {
+  slider.goTo('next');
+});
+
 
 
 
