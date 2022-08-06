@@ -4,12 +4,13 @@
     height: 90px;
     display: flex;
     align-items: center;
-    color: $main_color;
+    color: black;
     font-size: 72px;
     text-transform: uppercase;
-    background: black;
+    background: linear-gradient(15deg, $main_color 0%, #80d0c7 100%);
     opacity: 1;
     top: 50%;
     left: 40%;
     transform: translateY(-50%);
+    border-radius: 5px;
 }
