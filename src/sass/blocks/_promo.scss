@@ -3,6 +3,15 @@
     position: relative;
     background: url('../img/main_bg.jpg') no-repeat 50%/cover;
     padding-top: 171px;
+    &__inprogress {
+        display: fixed;
+        color: #9ACD32;
+        font-size: 72px;
+        text-transform: uppercase;
+        z-index: 10;
+        top: 50px;
+        left: 50px;
+    }
     &__title {
         width: 625px;
         margin-top: 15px;
@@ -28,4 +37,5 @@
             text-decoration: none;
         }
     }
+    
 }

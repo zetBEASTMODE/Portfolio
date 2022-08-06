@@ -11,11 +11,18 @@
     margin: 0;
     padding: 0;
 }
+.about, .buttons, .contacts, .menu, .media, .modal, .pageup, .portfolio, .prices, .promo, .resume, .sidepanel, .skills, .title {
+    opacity: 0.3;
+}
+
 
 .container { 
     width: 1140px;
     margin: 0 auto;
 }
+
+
+
 
 @import 'base/animations';
 @import 'blocks/promo';
@@ -32,4 +39,7 @@
 @import 'blocks/policy';
 @import 'blocks/pageup';
 @import 'blocks/modal';
+@import 'blocks/inprogress';
 @import 'blocks/media';
+
+

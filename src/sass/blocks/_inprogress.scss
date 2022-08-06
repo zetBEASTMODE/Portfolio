@@ -1,0 +1,15 @@
+.inprogress {
+    position: fixed!important;
+    width: 465px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    color: $main_color;
+    font-size: 72px;
+    text-transform: uppercase;
+    background: black;
+    opacity: 1;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+}
